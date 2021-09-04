@@ -3,7 +3,7 @@ gofuzz
 
 gofuzz is a library for populating go objects with random values.
 
-[![GoDoc](https://godoc.org/github.com/google/gofuzz?status.svg)](https://godoc.org/github.com/google/gofuzz)
+[![GoDoc](https://godoc.org/github.com/gagliardetto/gofuzz?status.svg)](https://godoc.org/github.com/gagliardetto/gofuzz)
 [![Travis](https://travis-ci.org/google/gofuzz.svg?branch=master)](https://travis-ci.org/google/gofuzz)
 
 This is useful for testing:
@@ -11,7 +11,7 @@ This is useful for testing:
 * Do your project's objects really serialize/unserialize correctly in all cases?
 * Is there an incorrectly formatted object that will cause your project to panic?
 
-Import with ```import "github.com/google/gofuzz"```
+Import with ```import "github.com/gagliardetto/gofuzz"```
 
 You can use it on single variables:
 ```go
@@ -76,7 +76,7 @@ example a fuzz test for a the function `mypackage.MyFunc` that takes an int argu
 // +build gofuzz
 package mypackage
 
-import fuzz "github.com/google/gofuzz"
+import fuzz "github.com/gagliardetto/gofuzz"
 
 func Fuzz(data []byte) int {
         var i int

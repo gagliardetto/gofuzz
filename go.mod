@@ -1,3 +1,3 @@
-module github.com/google/gofuzz
+module github.com/gagliardetto/gofuzz
 
 go 1.12
